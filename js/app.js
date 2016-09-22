@@ -20,7 +20,20 @@
         $scope.table = data;
       })
       .error(function(data, status, headers, config) {
-        $scope.data = "it failed :(";
+        $scope.data = "Can't find videos! I'm sorry :()";
+      })
+    }
+
+    $scope.getOutlines = function () {
+      $scope.displayData=false;
+      $http.get('outlines.json')
+      .success(function(data, status, headers, config) {
+        // Called when the response is available
+        $scope.data = "Click the Links Below";
+        $scope.table = data;
+      })
+      .error(function(data, status, headers, config) {
+        $scope.data = "Can't find outlines! I'm sorry :(";
       })
     }
   }
