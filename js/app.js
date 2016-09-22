@@ -16,7 +16,7 @@
       $http.get('videos.json')
       .success(function(data, status, headers, config) {
         // Called when the response is available
-        $scope.data = "Click the Links Below";
+        $scope.data = "Click the links below to download the videos";
         $scope.table = data;
       })
       .error(function(data, status, headers, config) {
@@ -29,7 +29,7 @@
       $http.get('outlines.json')
       .success(function(data, status, headers, config) {
         // Called when the response is available
-        $scope.data = "Click the Links Below";
+        $scope.data = "Click the links below to download the outlines";
         $scope.table = data;
       })
       .error(function(data, status, headers, config) {
