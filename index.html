@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="VPSSite">
+    <head>
+        <meta charset="utf-8">
+        <title>John's VPS</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- AngularJS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="./js/app.js"></script>
+        <!-- Bootstrap addin -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- End bootstrap css addin -->
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="navbar">
+            <h1>
+                <span class="glyphicon glyphicon-apple" aria-hiddent="true"></span>
+                John's VPS</h1>
+        </div>
+        <div class="container" ng-controller="VPSSiteController">
+            <!-- Body -->
+            <div id="intro-content" class="col-xs-12">
+                <p>
+                    Welcome to John's VPS site! There probably isn't much here, but we are working on that!<br>
+                    If you are looking for something specific, it should be added below. If you don't see it, feel free to email John
+                    <a href="mailto:johwiltb@gmail.com">here</a>
+                </p>
+            </div>
+
+            <div class="jw-link-col col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <a class="btn large-block-button jw-link" role="button" target="_blank" href="https://github.com/johwiltb">
+                        <h3>Github Page</h3>
+                    </a>
+            </div>
+
+            <div class="jw-link-col col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <a class="btn large-block-button jw-link" role="button" ng-click="getVideos()">
+                        <h3>Small Group Videos</h3>
+                    </a>
+            </div>
+
+            <div id="button-data" class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-hide="displayData">
+                {{data}}
+                <div ng-repeat="item in table">
+                    <a href="{{item.url}}" download>{{item.session}}</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    Created from scratch and Bootstrap by John Wiltberger
+                    <span class="glyphicon glyphicon-copyright-mark"></span>
+                    2016.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- JQuery requirement -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

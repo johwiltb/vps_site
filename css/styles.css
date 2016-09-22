@@ -1,0 +1,103 @@
+/* Color Scheme
+#faf8f6 w3-theme-l5
+#efe8e1 w3-theme-l4
+#dfd2c3 w3-theme-l3
+#cfbba5 w3-theme-l2
+#c0a487 w3-theme-l1
+#b18f6a w3-theme
+#a58057 w3-theme-d1
+#93714d w3-theme-d2
+#816344 w3-theme-d3
+#6e553a w3-theme-d4
+#5c4730 w3-theme-d5
+*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  background-color: #efe8e1;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute
+  margin-bottom: 40px;
+}
+
+.ng-hide {
+  /* this is just another form of hiding an element */
+  display: block!important;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+/******* Navbar Styling *******/
+
+.navbar {
+  background-color: #b18f6a;
+  color: #faf8f6;
+  border-radius: 0;
+}
+
+/******* END Navbar Styling *******/
+
+/******* Body Styling *******/
+
+#intro-content {
+  font-style: italic;
+}
+
+#button-data {
+  font-size: 1.5em;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  color: #efe8e1;
+  width: 90%;
+  border-radius: 5;
+  background-color: #a58057;
+  box-shadow: 5px 5px 2px #5c4730;
+}
+
+#button-data a {
+  color: #dfd2c3;
+  font-size: .9em;
+
+}
+.jw-link-col {
+  padding: 5px;
+}
+
+.jw-link {
+  color: #efe8e1;
+}
+
+.jw-link > h3 {
+  margin: 5px;
+}
+.large-block-button {
+  width: 90%;
+  border-radius: 5;
+  background-color: #a58057;
+  box-shadow: 5px 5px 2px #5c4730;
+}
+
+/******* Body Styling *******/
+
+/******* Footer Styling *******/
+.footer {
+  position: absolute;
+  background-color: #816344;
+  color: #cfbba5;
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+}
+/******* END Footer Styling *******/
