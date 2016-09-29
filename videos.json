@@ -6,5 +6,9 @@
   {
     "session" : "Session 2",
     "url" : "files/Session2.mp4"
+  },
+  {
+    "session" : "Session 3",
+    "url" : "files/Session3.mp4"
   }
 ]

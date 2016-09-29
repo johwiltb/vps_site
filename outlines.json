@@ -10,5 +10,9 @@
   {
     "session" : "Session 3",
     "url" : "files/Session3.pdf"
+  },
+  {
+    "session" : "Session 4",
+    "url" : "files/Session4.pdf"
   }
 ]
