@@ -10,5 +10,9 @@
   {
     "session" : "Session 3",
     "url" : "files/Session3.mp4"
+  },
+  {
+     "session" : "Session 4",
+     "url" : "files/Session4.mp4"
   }
 ]
