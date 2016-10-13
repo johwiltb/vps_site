@@ -14,5 +14,9 @@
   {
      "session" : "Session 4",
      "url" : "files/Session4.mp4"
+  },
+  {
+     "session" : "Session 5",
+     "url" : "files/Session5.mp4"
   }
 ]
